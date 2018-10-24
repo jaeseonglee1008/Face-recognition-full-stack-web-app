@@ -4,7 +4,13 @@
 	<title>This is title</title>
 </head>
 <body>
-	<p>jlee7060.pythonanywhere.com</p>
+	{% for post in posts %}
+	    <div>
+	        <p>published: {{ post.published_date }}</p>
+	        <h1><a href="">{{ post.title }}</a></h1>
+	        <p>{{ post.text|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
 
 </body>
 </html>
