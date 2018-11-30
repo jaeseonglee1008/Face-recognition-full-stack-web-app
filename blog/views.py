@@ -6,6 +6,7 @@ from django.core.files.storage import FileSystemStorage
 
 from .forms import ImageUploadForm
 from django.conf import settings
+from .opencv_dface import opencv_dface
 
 
 
@@ -35,9 +36,10 @@ def dface(request):
 		if form.is_valid():
 			post = form.save(commit=False)
 			post.save()
-			#opencv_dface(settings.MEDIA_ROOT_URL + imageURL
 			# pass the img file to deepface for scanning
 			imageURL = settings.MEDIA_URL + form.instance.document.name
+			opencv_dface(settings.MEDIA_ROOT_URL + imageURL)
+
 			return render(request, 'blog/dface.html', {'form':form, 'post':post})
 	else:
 		# rendering - passes img form to the template
