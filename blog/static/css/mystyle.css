@@ -6,9 +6,9 @@ html, body, .page {
   transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -webkit-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   -moz-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
-  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);  
+  -o-transition: all .6s cubic-bezier(.5, .2, .2, 1.1);
   color: #fff;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 * {
@@ -46,7 +46,7 @@ html, body, .page {
   transition-delay: .4s !important;
 }
 
-#t2:target #p1, 
+#t2:target #p1,
 #t3:target #p1,
 #t4:target #p1,
 #t5:target #p1,
@@ -54,7 +54,7 @@ html, body, .page {
   background: black;
 }
 
-#t2:target #p1 .motion, 
+#t2:target #p1 .motion,
 #t3:target #p1 .motion,
 #t4:target #p1 .motion,
 #t5:target #p1 .motion,
@@ -80,7 +80,7 @@ ul .motion:hover {
 #t3:target ul .motion,
 #t4:target ul .motion,
 #t5:target ul .motion,
-#t6:terget ul .motion{
+#t6:target ul .motion{
   transform: scale(.6);
   -webkit-transform: scale(.6);
   -moz-transform: scale(.6);
@@ -197,4 +197,3 @@ a {
   -o-transform: translateX(0) !important;
   transition-delay: 1s;
 }
-
