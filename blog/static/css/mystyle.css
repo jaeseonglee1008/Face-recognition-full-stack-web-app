@@ -28,11 +28,11 @@ html, body, .page {
 }
 
 #p1 { background: black; }
-#p2 { background: tomato; }
-#p3 { background: gold; }
-#p4 { background: deeppink; }
-#p5 { background: rebeccapurple; }
-#p6 { background: brown; }
+#p2 { background: #673AB7; }
+#p3 { background: #2196F3; }
+#p4 { background: #8BC34A; }
+#p5 { background: #FF5722; }
+#p6 { background: #795548; }
 
 #t2:target #p2,
 #t3:target #p3,
@@ -133,7 +133,8 @@ a {
 }
 
 .hint {
-  font-size: 13px;
+  font-size: 22px;
+  color: ##fdcb6e;
 }
 
 #p4 .hint {
@@ -162,11 +163,11 @@ a {
   bottom: 0;
   right: 10%;
   left: 0;
-  width: 270px;
-  height: 170px;
+  /* width: 270px; */
+  /* height: 170px; */
   margin: auto;
   text-align: center;
-  font-size: 80px;
+  font-size: 40px;
   line-height: 1.3;
   transform: translateX(360%);
   -webkit-transform: translateX(360%);
@@ -197,3 +198,30 @@ a {
   -o-transform: translateX(0) !important;
   transition-delay: 1s;
 }
+/* template style ends */
+
+
+/* portfolio style - gallery begins*/
+div.gallery {
+    margin-top: 40px;
+    margin-left: 70px;
+    float: left;
+    width: 200px;
+    height:200px;
+}
+
+div.gallery:hover {
+  width: 220px;
+  height: 220px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+/* gallery ends */
