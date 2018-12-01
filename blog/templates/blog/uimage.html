@@ -10,7 +10,7 @@
   <form method="POST" class="post-form" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit" class="save btn btn-default" value=""upload">save!!</button>
+    <button type="submit" class="save btn btn-default" value="upload">save!!</button>
   </form>
 
   {% if uploaded_file_url %}
