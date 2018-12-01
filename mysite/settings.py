@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import pymysql
-pymysql.install_as_MySQLdb()
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f9h*-op0w_pop$m46uvb10bdej8=8mw#%h_l=!j8k)-qujxme9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', '.pythonanywhere.com']
 
@@ -78,19 +76,19 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-     'default': {
-          'ENGINE': 'django.db.backends.mysql',
-          'NAME': 'jasonleeee$default',
-          'USER': 'jasonleeee',
-          'PASSWORD': 'iamjason',
-          'HOST': 'jasonleeee.mysql.pythonanywhere-services.com',
-          'PORT': ''
-     }
+     # 'default': {
+     #      'ENGINE': 'django.db.backends.mysql',
+     #      'NAME': 'jasonleeee$default',
+     #      'USER': 'jasonleeee',
+     #      'PASSWORD': 'iam*****',
+     #      'HOST': 'jasonleeee.mysql.pythonanywhere-services.com',
+     #      'PORT': ''
+     # }
 
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 
 }
 
