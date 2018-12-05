@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Syncopate);
 /* dface.html styling */
 html, body {
-  padding-top: 50px;
+  padding-top: 5px;
   width: auto;
   margin: 0 auto;
   color: #1fa67b;
@@ -31,7 +31,14 @@ html, body {
   margin-right: auto;
   width: 35%;
 }
+.fa-home:before{
+  color:green;
+  font-size: 3em;
+  margin-top: 0;
+  margin-bottom: 0;
 
+}
+p
 /* removing nasty label */
 label[for=description-id],[for=document-id],[for=files]{
   display:none;

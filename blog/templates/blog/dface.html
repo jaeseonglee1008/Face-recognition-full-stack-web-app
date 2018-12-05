@@ -9,7 +9,10 @@
   <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
  </head>
  <body class="dface">
-  <p><a href="{% url 'post_list' %}" class="motion fa fa-home" id="home_a">Return to home</a></p>
+  <span><p class="motion fa fa-home"></p>
+  <a href="{% url 'post_list' %}" id="home_a">Return to home</a>
+  <p class="motion fa fa-home"></p>
+  </span>
 <!-- image upload begins-->
   <form method="post" enctype="multipart/form-data" class="field">
       {% csrf_token %}
