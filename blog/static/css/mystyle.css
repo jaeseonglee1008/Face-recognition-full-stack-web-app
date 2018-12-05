@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Syncopate);
 html, body, .page {
   width: 100%;
   height: 100%;
@@ -230,25 +229,25 @@ div.desc {
 /* gallery ends */
 
 /* dface.html styling */
-.dface {
+body .dface {
   padding-top: 50px;
   width: auto;
   margin: 0 auto;
   color: #1fa67b;
   text-align: center;
   font-weight: bold;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   padding-bottom: 20px;
 }
 .dface a,p,input,button{
   color:black;
-  font-family: 'Syncopate', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-weight: bold;
 }
 .dface a{
   color:green;
 }
-.field{
+form .field{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -258,7 +257,6 @@ div.desc {
 /* removing nasty label */
 label[for=description-id],[for=document-id],[for=files]{
   display:none;
-
 }
 .form-control{
   margin-bottom: 10px;
