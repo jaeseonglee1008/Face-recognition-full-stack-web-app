@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+/* dface.html styling */
+html, body {
+  padding-top: 50px;
+  width: auto;
+  margin: 0 auto;
+  color: #1fa67b;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Syncopate', sans-serif;
+  padding-bottom: 20px;
+}
+* {
+  font-family: 'Syncopate', sans-serif;
+}
+#home_a{
+  font-size: 2em;
+  font-weight: bold;
+}
+.dface a,p,input,button{
+  color:black;
+  font-family: 'Syncopate', sans-serif;
+  font-weight: bold;
+}
+.dface a{
+  color:green;
+}
+.field{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+/* removing nasty label */
+label[for=description-id],[for=document-id],[for=files]{
+  display:none;
+}
+.form-control{
+  margin-bottom: 10px;
+}
+/* dface.html styling ends */
