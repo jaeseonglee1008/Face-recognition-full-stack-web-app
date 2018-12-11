@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/projectstyle.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type='text/javascript' src="{% static 'js/script.js' %}">
+  </script>
+</head>
+<body>
+
+  <main>
+
+    <div class="button-set">
+      <button id="show-all">Show All</button>
+      <button id="web-app">Web application</button>
+      <button id="html">HTML</button>
+      <button id="css">CSS</button>
+      <button id="javascript">Javascript</button>
+      <button id="python">Python</button>
+      <button id="oc">objective-c</button>
+      <button id="swift">swift</button>
+      <button id="java">java</button>
+    </div>
+    <div class="gallery-set">
+
+
+      <div class="gallery webapp python html css">
+        <a href="{% url 'dface' %}">
+          <img src="{% static 'img/gallery/face_recog_img.png' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">Face recognition web application</div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="gallery webapp html css javascript">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/liberty.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">Liberty mutual dashboard</div>
+          </div>
+        </a>
+      </div>
+      <div class="gallery python">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/web.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">TCP/UCP socket</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery webapp html css javascript python">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/navi.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">Elevation navigation</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery oc swift">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/quiz.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">Quizzler</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery python">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/text.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">pipeline text editor</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery java">
+        <a href="#t3">
+          <img src="{% static 'img/gallery/tic.jpg' %}" alt="face_recog_app_img" class="image" width="200" height="200">
+          <div class="overlay">
+            <div class="text">tictactoe with MVC model</div>
+          </div>
+        </a>
+      </div>
+
+
+    </div>
+  </main>
+  <footer class="layer-footer">
+    <p>&copy; 2018 - Jason Lee - All rights reserves.</p>
+  </footer>
+</body>
+</html>

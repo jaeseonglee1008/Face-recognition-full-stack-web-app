@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/contactstyle.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/script.js' %}">
+  </script>
+</head>
+<body>
+
+  <main>
+    <div id="contact">Click here</div>
+
+    <div id="contactForm">
+
+      <h1>Keep in touch!</h1>
+      <small>I usually response back within 24 hours</small>
+
+      <form action="mailto:iamjason@bu.edu" method="post" ">
+
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+      </form>
+    </div>
+  </main>
+  <footer class="layer-footer">
+    <p>&copy; 2018 - Jason Lee - All rights reserves.</p>
+  </footer>
+</body>
+</html>

@@ -13,22 +13,6 @@ from .models import ImageUploadModel
 def post_list(request):
 	return render(request, 'blog/post_list.html', {})
 
-def uimage(request):
-		# excute when upload img file
-	if request.method == 'POST':
-		form = UploadImageForm(request.POST, request.FILES)
-		if form.is_valid():
-			myfile = request.FILES['image']
-			fs = FileSystemStorage()
-			filename = fs.save(myfile.name, myfile)
-			uploaded_file_url = fs.url(filename)
-			return render(request, 'blog/uimage.html', {'form': form, 'uploaded_file_url': uploaded_file_url})
-	else:
-		# render
-		form = UploadImageForm()
-		return render(request, 'blog/uimage.html', {'form': form})
-
-
 def dface(request):
 	if request.method == 'POST':
 		# when user clicks 'save'button. validate the form

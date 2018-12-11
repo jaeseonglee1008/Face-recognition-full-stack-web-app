@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+#contact {
+  font-weight: 700;
+  border: 1px solid white;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 20%;
+  left: 40%;
+  background: teal;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#contact:hover {
+  background: #666;
+}
+
+#contact:active {
+  background: grey;
+}
+
+#contactForm {
+  color: grey;
+  display: none;
+  padding: 2em;
+  width: 400px;
+  top:50%;
+  left:45%;
+  vertical-align: middle;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  transform: translate(-50%,-50%);
+}
+
+input, textarea {
+  margin: .8em auto;
+  padding: .4em;
+  width: 280px;
+  vertical-align: middle;
+  display: block;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+.formBtn {
+  width: 140px;
+  border: none;
+  height: 30px;
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  display: inline-block;
+}

@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <!-- header begins -->
+  <header>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aboutstyle.css' %}">
+
+  </header>
+  <!-- header ends -->
+  <!-- main begins-->
+
+
+
+  <main>
+    <div id="timeline">
+      <div class="slot">
+        <span>1990-2008</span>
+        <p>I was born and raised with strong curiosity in Korea. I have a older brother and I have been with two Golden Retrievers. Sadly, I do not even remember their name since they left me when I was in middle school, but I still remember that they were really cute and good to be with me.</p>
+        <img src="{% static 'img/timeline/baby-icon.jpg' %}" alt="new born image icon">
+        <img src="{% static 'img/timeline/korea-icon.png' %}" alt="Korea map image icon">
+        <img src="{% static 'img/timeline/golden.png' %}" alt="Golden Retriever image png icon">
+      </div>
+      <div class="slot right">
+        <span>2009-2015</span>
+        <p>I moved to Boston for the first time after graduating from high school. I got into the University of Massachusetts at Amherst and majored in computer science. After finishing my first year at university, I worked for a personnel officer in the Navy for two years. After that, I went back to school and got my bachelor's degree.</p>
+        <img src="{% static 'img/timeline/boston-icon.png' %}" alt="boston icon png format">
+        <a href="https://www.umass.edu/"><img src="{% static 'img/timeline/umass-old-chapel-icon.jpg' %}" alt="umass old chapel image jpg format"></a>
+        <img src="{% static 'img/timeline/rok-navy-logo.jpg' %}" alt="rok navy logo jpg format">
+
+      </div>
+      <div class="slot">
+        <span>2016-2018</span>
+        <p>While teaching mathematics as a tutor at Bunker Hill Community College, I taught college students algebra, statistics, and calculus. I also consulted for clients at a multi-line insurance agency and now I currently work as a data analytics engineer at a network communications company called Crown Castle.</p>
+        <a href="https://www.bhcc.edu/"><img src="{% static 'img/timeline/bhcc-icon.jpeg' %}" alt="bunker hill Community college logo"></a>
+        <a href="https://www.libertymutual.com/"><img src="{% static 'img/timeline/liberty-mutual-logo.png' %}" alt="liberty mutual logo"></a>
+        <a href="http://www.crowncastle.com/"><img src="{% static 'img/timeline/cci-logo.jpeg' %}" alt="crown castle logo"></a>
+      </div>
+      <div class="slot right">
+        <span>2018-Current</span>
+        <p>Since I had many subjects and fields that I wanted to study during college, I changed my major. I got a lot of background knowledge, but I decided to go to graduate school because I did not have deep knowledge about my major field. I am currently pursuing a master's degree at Boston University.</p>
+        <a href="http://www.bu.edu/"><img src="{% static 'img/timeline/bu-logo.jpeg' %}" alt="boston university terrier logo"></a>
+        <button id="btn">Load Degree Data</button>
+      </div>
+      <table id="degrees"></table>
+    </div>
+  </main>
+
+
+  <!-- main ends -->
+  <!-- footer begins-->
+
+
+  <footer>
+    <p>&copy; 2018 - Jason Lee - All rights reserves.</p>
+  </footer>
+
+  <!-- footer ends -->
+
+</body>
+</html>
