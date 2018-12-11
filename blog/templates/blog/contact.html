@@ -11,14 +11,16 @@
 <body>
 
   <main>
-    <div id="contact">Click here</div>
+    <div class="contactClass" id="resume"><a href="{% static 'img/resume.png' %}" download="resume.png">save Resume</a></div>
+
+    <div class="contactClass" id="contact">Contact me</div>
 
     <div id="contactForm">
 
       <h1>Keep in touch!</h1>
       <small>I usually response back within 24 hours</small>
 
-      <form action="mailto:iamjason@bu.edu" method="post" ">
+      <form action="mailto:iamjason@bu.edu" method="post">
 
         <input placeholder="Name" type="text" required />
         <input placeholder="Email" type="email" required />

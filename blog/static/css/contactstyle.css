@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Syncopate);
 
-#contact {
+#contact, #resume{
   font-weight: 700;
   border: 1px solid white;
   position: absolute;
@@ -10,18 +10,20 @@
   left: 40%;
   background: teal;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 25px;
 }
-
-#contact:hover {
+#resume{
+  top: 10%;
+}
+#contact:hover, #resume:hover {
   background: #666;
 }
 
-#contact:active {
+#contact:active,#resume:active {
   background: grey;
 }
 
-#contactForm {
+#contactForm{
   color: grey;
   display: none;
   padding: 2em;

@@ -48,6 +48,7 @@ $(document).ready(function(){
   $('#contact').click(function() {
     $('#contactForm').fadeIn("fast");
   });
+
   // hide if user click out of the form
   $(document).mouseup(function (e) {
     var container = $("#contactForm");
