@@ -26,15 +26,22 @@ html, body, .page {
 /* main page context style setting */
 div.centered {
   font-family: Raleway, Arial, Verdana, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 3em;
   position: absolute;
   text-align: center;
+  color: white;
+  transition: color 1s;
 }
 
 /* reduce size only for my name sentence */
 div.centered > p#myName{
   font-size: .8em;
+}
+
+div.centered:hover{
+
+  color:lime;
 }
 
 /* boston bg */
